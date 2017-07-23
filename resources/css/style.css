@@ -1,0 +1,457 @@
+/*Orange Color : #d35400  */
+
+/* -----------------------------------------------------------*/
+/* BASIC SETUP */
+/* -----------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #8e8e8e;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*clearfix floats */
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* -----------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* -----------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*---------- PARAGRAPHS ------------*/
+
+.long-copy {
+    line-height: 150%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    color: #a3a3a3;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+    color: #a3a3a3;
+}
+/*---------- HEADINGS ------------*/
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #d35400;
+    content: " "; 
+    /*when we create a after class, we need to specify its content. In this case, it can be empty */
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/*---------- ICONS------------*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #d35400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #d35400;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+
+/*---------- LINKS ------------*/
+
+a:link,
+a:visited {
+    color: #d35400;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #d35400;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #8e8e8e;
+    border-bottom: 1px solid transparent;
+}
+
+/*---------- BUTTONS ------------*/
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fff;
+    color: #d35400;
+}
+
+
+.btn:hover, 
+.btn:active {
+    background-color: #a04000;
+}
+
+.btn-full:hover,
+.btn-full:active {
+
+    border: 1px solid #d35400;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #d35400;
+    color: #fff;
+}
+
+/* -----------------------------------------------------------*/
+/* HEADER */
+/* -----------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+
+
+/* ------ top menu navigation------ */
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #d35400;
+}
+
+
+/* -----------------------------------------------------------*/
+/* FEATURES */
+/* -----------------------------------------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 25px;
+    
+}
+
+
+
+
+/* -----------------------------------------------------------*/
+/* MEALS */
+/* -----------------------------------------------------------*/
+
+.section-meals {
+    padding-top: 20px;
+}
+
+.meals-showcase {
+    list-style: : none;  /* no bullet points */
+    width: 100%; /* entire browser */
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%; /* four elements showing side by side with the same size */
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, , opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/* -----------------------------------------------------------*/
+/* HOW IT WORKS*/
+/* -----------------------------------------------------------*/
+
+.section-steps {
+    background-color: #f4f4f4;
+    padding-bottom: 60px;
+}
+
+
+.steps-box:first-child {
+    text-align: right;
+    margin-top: 30px;
+    padding-right: 12%;
+}
+
+.steps-box:last-child {
+    margin-top: 75px;
+    padding-left: 1%;
+    padding-right: 10%;
+    line-height: 150%
+}
+
+.app-screen {
+    width: 50%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #fff;
+    border: 2px solid #d35400;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+    background-color: #d35400;
+    
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    
+}
+
+
+/* -----------------------------------------------------------*/
+/* CITIES*/
+/* -----------------------------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+    padding-left: 6%;
+    font-size: 16px;
+    color: #a3a3a3;
+}
+
+.section-cities {
+    margin-bottom: 50px;
+}
+
+
+/* -----------------------------------------------------------*/
+/* TESTIMONIALS*/
+/* -----------------------------------------------------------*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(images/back-customers.jpg);
+    background-size:cover;
+    color: #fff;
+    background-attachment: fixed;  
+    padding-bottom: 60px;
+}
+
+blockquote {
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 6%;
+    font-size:90%;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 170%;
+    position: relative;
+    margin-top:40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 600%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    
+}
+
+
+cite img {
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+
